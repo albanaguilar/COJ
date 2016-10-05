@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1475622266 source:c:\users\king cobra\desktop\1042 - bamboo\main.cpp
+	<iostream>
+	<math.h>
+	<cmath>
+	<iomanip>
+

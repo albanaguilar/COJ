@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1460275509 source:c:\users\usuario1\desktop\1099 - pythagorean numbers\main.cpp
+	<math.h>
+	<cmath>
+	<iostream>
+

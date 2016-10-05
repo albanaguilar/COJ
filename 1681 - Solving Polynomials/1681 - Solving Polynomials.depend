@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1462269279 source:c:\users\usuario1\desktop\1681 - solving polynomials\main.cpp
+	<iostream>
+	<cmath>
+	<math.h>
+	<stdio.h>
+

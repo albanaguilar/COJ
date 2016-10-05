@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1475118502 source:c:\users\king cobra\desktop\1003 - general election\main.cpp
+	<cstdlib>
+	<iostream>
+
