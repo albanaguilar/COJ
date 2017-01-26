@@ -1,48 +1,68 @@
 #include <iostream>
 #include <string>
-
 using namespace std;
 
 int main()
 {
-    long num1, num2, num3, IMin = 0, Imax = 0, Imed = 0, i;
-    int array1[3];
-    for(i = 0; (array1[i] != NULL) && (num1 <= 100) && (num2 <= 100) && (num3 <= 100) ; i++)
+    int iarr[3];
+
+    for (int i = 0; i < 3; i++ )
     {
-        cin >> array1[i];
-        cout <<array1[i];
+        cin >> iarr[i];
     }
 
-    cout <<endl;
-    string order;
-    getline(cin , order);
-    int a, b, c;
+    string s;
+    cin >> s;
 
-    cout << order[i];
-    cout <<endl;
+    int mayor = 0;
+    int menor = 100;
+    int enmedio = 0;
 
-    for(i = 0; i < order.length(); i++)
+    for (int i = 0; i < 3; i++ )
     {
-        if(array1[i] > array1[Imax] && (array1[i] > array1[IMin]) )
-           {
-               order[i] = array1[i];
-               c = order[i];
-           }
-        else if(array1[i] < array1[Imax] && (array1[i] < array1[IMin]) )
-            {
-                order[i] = array1[i];
-                a = order[i];
-            }
-        else if( (array1[i] < array1[Imax]) && (array1[i] > array1[IMin]) )
+        if ( menor > iarr[i] )
         {
-                order[i] = array1[i];
-                b = order[i];
+            menor = iarr[i];
         }
     }
-    for(i = 0; i < order.length(); i++)
+
+    for (int i = 0; i < 3; i++ )
     {
-        cout << order[i] <<" ";
+        if ( mayor < iarr[i] )
+        {
+            mayor = iarr[i];
+        }
     }
+
+    for (int i = 0; i < 3; i++ )
+    {
+        if ( iarr[i] != mayor && iarr[i] != menor )
+        {
+            enmedio = iarr[i];
+        }
+    }
+
+    for ( int i = 0; i < 3; i++ )
+    {
+        if ( s[i] == 'A' )
+        {
+            cout << menor;
+        }
+        else if ( s[i] == 'B' )
+        {
+            cout << enmedio;
+        }
+        else if ( s[i] == 'C' )
+        {
+            cout << mayor;
+        }
+        if ( i != 2 )
+        {
+            cout << " ";
+        }
+    }
+
+
 
     return 0;
 }
